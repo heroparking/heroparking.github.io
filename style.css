@@ -1464,7 +1464,7 @@ input[type="radio"]:checked+label:after {
 
 #footer {
     width: 100%;
-	background-color: #1d252e;
+	background-color: #ffffff;
 	display: inline;
 	float: left;
 	padding: 40px 0 0;
@@ -1486,7 +1486,7 @@ input[type="radio"]:checked+label:after {
 	margin: 5px;
 }
 .footer-social .title-area h2{
-	color: #fff;
+	color: #008080;
 }
 
 .footer-text {
