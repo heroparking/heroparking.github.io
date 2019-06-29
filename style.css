@@ -107,7 +107,7 @@ img {
 	/* centers the loading animation horizontally one the screen */
 	top: 50%;
 	/* centers the loading animation vertically one the screen */
-	background-image: url(assets/images/loader.gif);
+	background-image: url(assets/images/preloader.gif);
 	/* path to your loading animation */
 	background-repeat: no-repeat;
 	background-position: center;
@@ -124,8 +124,9 @@ img {
 	display: inline;
 	width: 100%;
 	height: 100%;
-	background: url(assets/images/head.gif)	 no-repeat center center fixed; 
+	background: url(assets/images/prius-parallel-park.gif)	 no-repeat center center fixed; 
 	background-size: cover;
+	background-attachment: fixed !important;
 }
 
 
@@ -284,7 +285,7 @@ img {
 
 
 .main-nav {
-	background-color: #1d252e;
+	background-color: #fff;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -538,23 +539,25 @@ img {
 }
 
 .about-image {
-	width: 350px;
-
-}
-.about-image img{
 	width: 100%;
-	margin-left: 15%;
+	position: relative;
+	left: 20%;
+	top: 30%;
+
 }
 
 .about-us-content {
 	margin: 5% 0;
-	
+	display: flex;
+	justify-content: first baseline;
 	color: #000;
 }
 
 
 
-
+.col-md-5 {
+	float: left;
+}
 
 .about-image img {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1128,7 +1131,6 @@ video {
 	opacity: 1;
 }
 */
-
 #web-team{
 	color: #ffffff;
 	display: inline;
@@ -1141,30 +1143,28 @@ video {
   padding:0;
   list-style:none;
 }
-.web-team ul li{
-	justify-content: center;
-	align-content: center
-}
 .web-team ul li .cnt-block{
-	max-width: 200px;
-	max-height: 300px;
 	box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-	border-radius:10%;
+
+	background: url("https://webgradients.com/public/webgradients_png/065%20Burning%20Spring.png") no-repeat center top / cover;
 }
 .web-team .heading.heading-icon {
     display: block;
 }
 .web-team .padding-lg {
 	display: block;
+	padding-top: 60px;
 	padding-bottom: 60px;
 }
 .web-team .practice-area.padding-lg {
     padding-bottom: 55px;
+    padding-top: 55px;
 }
 .web-team .web-team .practice-area .inner{ 
      border:1px solid #999999; 
 	 text-align:center; 
 	 margin-bottom:28px; 
+	 padding:40px 25px;
 }
 .web-team .our-webcoderskull .cnt-block:hover {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
@@ -1175,10 +1175,11 @@ video {
 	font-size:24px; 
 	font-weight:500;
 	font-family: 'Poppins', sans-serif;
+	padding: 10px 0;
 }
 .web-team .practice-area .inner p{ 
     font-size:14px; 
-	line-height:16px; 
+	line-height:22px; 
 	font-weight:400;
 }
 .practice-area .inner img{
@@ -1195,20 +1196,22 @@ video {
    margin: 0 0 10px;
 }
 .our-webcoderskull .cnt-block figure{
-   width:118px; 
-   height:118px; 
+   width:148px; 
+   height:148px; 
    border-radius:100%; 
    display:inline-block;
+   margin-bottom: 10px;
 }
 .our-webcoderskull .cnt-block img{ 
-   width:118px; 
-   height:118px; 
+   width:148px; 
+   height:148px; 
    border-radius:100%; 
 }
 .our-webcoderskull .cnt-block h3{ 
    color:#2a2a2a; 
    font-size:20px; 
    font-weight:500; 
+   padding:6px 0;
    text-transform:uppercase;
 }
 .our-webcoderskull .cnt-block h3 a{
@@ -1249,8 +1252,6 @@ video {
 .web-team:hover #team-cards{
 	display: block;
 }
-
-
 /*--------------------*/
 /* CONTACT */
 /*--------------------*/
@@ -1955,10 +1956,7 @@ input[type="radio"]:checked+label:after {
 }
 
 @media(max-width:480px) {
-	.main-nav {
-		padding-top: 10px;
-		width: 100%;
-	}
+
 
 	.main-nav ul li a {
 		font-size: 14px;
@@ -1997,10 +1995,6 @@ input[type="radio"]:checked+label:after {
 		padding: 0;
 	}
 
-	.about-image img{
-		width: 60%;
-		margin: 0;
-	}
 	.howit-works-video {
 		background: none;
 		text-align: center;
@@ -2099,7 +2093,6 @@ input[type="radio"]:checked+label:after {
 		-webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
 		box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
 	}
-	
 
 	/*--------------------*/
 	/* HOW IT WORKS */
