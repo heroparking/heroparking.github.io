@@ -233,7 +233,7 @@ img {
     bottom: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #1d252e;
+    background-color: #ffffff;
     display: inline;
     float: left;
     padding: 40px 0 0;
@@ -256,7 +256,7 @@ img {
 }
 
 .footer-social .title-area h2 {
-    color: #fff;
+    color: #008080;
 }
 
 .footer-text {
