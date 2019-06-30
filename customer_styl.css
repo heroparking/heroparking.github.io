@@ -297,6 +297,7 @@ img {
 /* FOOTER */
 /*--------------------*/
 
+
 #footer {
     left: 0;
     bottom: 0;
@@ -430,54 +431,66 @@ img {
     color: #008080;
 }
 .footer-social .title-area {
-margin-bottom:.0.5%;}   
+margin-bottom:2%;}
 
-@media(max-width:1192px){
-    #aa-about-us{
-        display: inline;
-        float: left;
-        width: 100%;
-        margin: 400px 0 5%;
+
+
+
+@media(max-width:480px) {
+
+
+	.main-nav ul li a {
+		font-size: 14px;
+		padding: 8px 35px;
+	}
+
+	.navbar-default .navbar-nav>li>a{
+		padding: 10px;
+	
+	}
+	.header-bottom-right {
+		margin-top: 30px;
+	}
+
+	.header-bottom-left {
+		padding-right: 0;
+		padding-top: 0;
+		margin-top: 10px;
+	}
+
+	.header-bottom-left h1 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.header-bottom-left p {
+		margin: 10px 0 0;
+	}
+
+	.download-btn {
+		margin-top: 20px;
+		width: 160px;
+	}
+
+	.header-bottom-right img {
+		width: 50%;
+	}
+
+	.title-area {
+		padding: 0;
     }
-}
-
-
-@media(max-width:480px){
-
-    .navbar-brand img{
-        max-height: 140%;
-        max-width: 140%;
-    }
-    .navbar-default .navbar-nav>li>a{
-        padding: 10px;
     
+.about-image img{
+		width: 60%;
+		margin: 0;
     }
-
     #aa-about-us{
         display: inline;
         float: left;
         width: 100%;
         margin: 100px 0 5%;
     }
-    .aa-title .title{
-        font-size: 20px;
-    }
-    .aa-title .title span{
-        color: #008080;
-    
-    }
-    .about-us-content .content h2{
-        font-size: 20px;
-    }
-    .about-us-content .content .mySlides p{
-        font-size: 5px;
-    }
-    .about-us-content .content .mySlides .about-image img{
-        width: 100%;
-        height: 300px;
-        margin-bottom: 10px;
-
-    }
+	
     .card {
         height:auto;
         width: 80%;
@@ -486,86 +499,63 @@ margin-bottom:.0.5%;}
         cursor: pointer;
         transition: 0.4s;
     }
-    
-    .card .card_image {
-        max-width: 100%;
-        height: 100%;
-        border-radius: 10px;
+    .about-us-content .content .mySlides .about-image img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+
     }
-    
-    .card .card_image img {
-        width: 60%;
-        height: 50%;
-        border-radius: 40px;
-        object-fit: cover;
-    }
-    
-    .card .card_title {
-        text-align: center;
-        border-radius: 0px 0px 40px 40px;
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: -80px;
-        height: 40px;
-    }
-    
     .card:hover {
         transform: scale(0.9, 0.9);
         box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
             -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
     }
-    
-    .title-white {
-        color: white;
-    }
-    
-    .title-black {
-        color: black;
-    }
-    .title-area {
-        display: inline;
-        float: left;
-        padding: 0 20px;
-        text-align: center;
-        width: 100%;
-        margin :2% 0;
-    }
-    
-    
-    .title-area .title {
-        border-bottom: 2px solid #ccc;
-        color: #777;
-        display: inline-block;
-        font-size: 20px;
-        font-weight: 700;
-        padding-bottom: 10px;
-        position: relative;
-        text-transform: uppercase;
-    }
-    .title-area .title span{
-        color: #008080;
-    
-    }
-    
-    
-    .title-area .title::before {
-        content: "";
-        height: 2px;
-        left: 0;
-        position: absolute;
-        top: 90px;
-        background-color:  #008080;
-    
-    }
-    
-    
-    .title-area h2 {
-        color: #777777;
-        font-size: 10px;
-        font-weight: 300;
-        line-height: 1.8;
-        padding: 10px 0 20px;
-    }
-    
+
+
+
+
+	.title-area .title {
+		font-size: 25px;
+		padding-bottom: 10px;
+	}
+
+	.title-area .title::before {
+		top: 50px;
+	}
+
+	.view-btn {
+		margin-right: 25%;
+	}
+
+	.social-icons li {
+		width: 15%;
+		height: 7%;
+	}
+
+	.social-icons i {
+		top: 30%;
+		left: 40%;
+	}
+
+	.social-icons a {
+		display: inline-block;
+		width: 88%;
+		height: 88%;
+	}
+
+	.social-icons a::before {
+		transform: scale(1);
+		-ms-transform: scale(1);
+		-webkit-transform: scale(1);
+		content: " ";
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		display: block;
+		background: linear-gradient(45deg, #008080, #008080);
+		transition: all 265ms ease-out;
+	}
+
+
+
 }
