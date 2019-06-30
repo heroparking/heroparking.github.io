@@ -158,6 +158,10 @@ img {
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.navbar-brand img{
+    max-height: 140%;
+    max-width: 140%;
+}
 
 
 
@@ -171,9 +175,54 @@ img {
     width: 100%;
     margin: 10% 0 5%;
 }
-.aa-title .title span{
-    color: #008080;
 
+
+
+
+.title-area {
+	display: inline;
+	float: left;
+	padding: 0 150px;
+	text-align: center;
+    width: 100%;
+    margin :5% 0;
+}
+
+
+.title-area .title {
+	border-bottom: 2px solid #ccc;
+	color: #777;
+	display: inline-block;
+	font-size: 33px;
+	font-weight: 700;
+	padding-bottom: 20px;
+	position: relative;
+	text-transform: uppercase;
+}
+.title-area .title span{
+	color: #008080;
+
+}
+
+
+.title-area .title::before {
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: 60px;
+	width: 150px;
+	background-color:  #008080;
+
+}
+
+
+.title-area p {
+	color: #777777;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.8;
+	padding: 20px 0 30px;
 }
 
 .card {
@@ -184,7 +233,12 @@ img {
     cursor: pointer;
     transition: 0.4s;
 }
-
+.about-image img{
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  display: block;
+}
 .card .card_image {
     width: 100%;
     height: 100%;
@@ -196,6 +250,7 @@ img {
     height: 100%;
     border-radius: 40px;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .card .card_title {
@@ -228,18 +283,19 @@ img {
 
 
 #footer {
-    position: ;
     left: 0;
     bottom: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: rgb(233, 230, 230);
     display: inline;
     float: left;
     padding: 40px 0 0;
 }
 
-
+.container-fluid{
+    padding: 0;
+}
 .footer-social {
     display: inline;
     float: left;
@@ -346,7 +402,11 @@ img {
     border-top: 1px #fff;
     bottom: 0;
     width: 100%;
-    background-color: #1d252e;
+    background-color: #008080;
+}
+.footer-copyright p{
+    color: #fff;
+    margin: 0;
 }
 
 .title-area .title span {
@@ -364,6 +424,11 @@ img {
 
 
 @media(max-width:480px){
+
+    .navbar-brand img{
+        max-height: 140%;
+        max-width: 140%;
+    }
     #aa-about-us{
         display: inline;
         float: left;
@@ -386,6 +451,7 @@ img {
     .about-us-content .content .mySlides .about-image img{
         width: 100%;
         height: 300px;
+        margin-bottom: 10px;
 
     }
     .card {
@@ -432,6 +498,50 @@ img {
     
     .title-black {
         color: black;
+    }
+    .title-area {
+        display: inline;
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+        width: 100%;
+        margin :2% 0;
+    }
+    
+    
+    .title-area .title {
+        border-bottom: 2px solid #ccc;
+        color: #777;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .title-area .title span{
+        color: #008080;
+    
+    }
+    
+    
+    .title-area .title::before {
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 90px;
+        background-color:  #008080;
+    
+    }
+    
+    
+    .title-area h2 {
+        color: #777777;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 1.8;
+        padding: 10px 0 20px;
     }
     
 }
