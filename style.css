@@ -1432,8 +1432,8 @@ input[type="radio"]:checked+label:after {
 }
 .mailto{
 	justify-content: center;
-	background-color: #008080;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #008080;
 	font-size: 16px;
 	box-shadow: none;
 	border-radius:5%;
